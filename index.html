@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Motor Spares South Africa - Hyundai, KIA, Daewoo Parts</title>
+    <meta name="description"
+        content="Find genuine Hyundai, KIA, Daewoo, and SsangYong parts in South Africa. Get the best prices on engines, gearboxes, and body parts. Contact us today!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-dark': '#1a1a1a',
+                        'brand-red': '#e60012', // Hyundai/Kia red-ish
+                        'brand-blue': '#002c5f', // Hyundai blue
+                        'whatsapp-green': '#25D366',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoPartsStore",
+      "name": "Korean Motor Spares South Africa",
+      "image": "",
+      "telephone": "+27825059074",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kempton Park",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      }
+    }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-brand-dark text-white sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold tracking-tighter">
+                <span class="text-brand-red">KOREAN</span> MOTOR SPARES
+            </a>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-brand-red transition">Home</a>
+                <a href="#brands" class="hover:text-brand-red transition">Brands</a>
+                <a href="#categories" class="hover:text-brand-red transition">Categories</a>
+                <a href="#locations" class="hover:text-brand-red transition">Locations</a>
+                <a href="#contact" class="hover:text-brand-red transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="tel:+27119701857" class="hidden lg:block text-sm font-semibold hover:text-gray-300">
+                    <i class="fas fa-phone-alt"></i> 011 970 1857
+                </a>
+                <a href="https://wa.me/27825059074"
+                    class="bg-whatsapp-green hover:bg-green-600 text-white px-4 py-2 rounded-full font-bold transition flex items-center">
+                    <span>WhatsApp</span>
+                </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-2xl focus:outline-none">
+                    &#9776;
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-900 p-4">
+            <a href="#home" class="block py-2 hover:text-brand-red">Home</a>
+            <a href="#brands" class="block py-2 hover:text-brand-red">Brands</a>
+            <a href="#categories" class="block py-2 hover:text-brand-red">Categories</a>
+            <a href="#locations" class="block py-2 hover:text-brand-red">Locations</a>
+            <a href="#contact" class="block py-2 hover:text-brand-red">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gray-100 py-12 md:py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4 text-brand-blue">
+                    Find Genuine <span class="text-brand-red">Hyundai Accent</span> Parts Near You!
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Are you searching for Hyundai Accent Parts? All your Hyundai Accent Spares are available at this
+                    site.
+                    We stock parts for Hyundai, KIA, Daewoo, and SsangYong.
+                </p>
+                <a href="#quote-form"
+                    class="bg-brand-red hover:bg-red-700 text-white text-xl font-bold px-8 py-4 rounded shadow-lg transition inline-block">
+                    GET ME BEST PRICE
+                </a>
+            </div>
+
+            <!-- Quote Form -->
+            <div id="quote-form" class="md:w-1/2 md:pl-10 w-full">
+                <div class="bg-white p-8 rounded-lg shadow-2xl border-t-4 border-brand-red">
+                    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">Get a Free Quote</h2>
+                    <form id="whatsapp-form" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Your Name *</label>
+                            <input type="text" id="name" required
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-red focus:border-brand-red">
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Phone Number *</label>
+                                <input type="tel" id="phone" required
+                                    class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-red focus:border-brand-red">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700">Email</label>
+                                <input type="email" id="email"
+                                    class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-red focus:border-brand-red">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Car Model *</label>
+                            <input type="text" id="model" placeholder="e.g. Hyundai Accent 2015" required
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-red focus:border-brand-red">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">Parts Needed *</label>
+                            <textarea id="parts" rows="2" required
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-red focus:border-brand-red"></textarea>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700">VIN Number (Optional)</label>
+                            <input type="text" id="vin"
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-brand-red focus:border-brand-red">
+                        </div>
+                        <button type="submit"
+                            class="w-full bg-whatsapp-green hover:bg-green-600 text-white font-bold py-3 rounded shadow transition flex justify-center items-center">
+                            <span>GIVE ME A QUOTE</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Korean Motor Spares For Hyundai or Kia Car Parts & Auto
+                Accessories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 border rounded-lg hover:shadow-lg transition text-center">
+                    <div class="text-4xl text-brand-red mb-4">🛠️</div>
+                    <h3 class="text-xl font-bold mb-2">Car Body Kits Swapping</h3>
+                    <p class="text-gray-600">Upgrade your vehicle's look with our professional body kit swapping
+                        services.</p>
+                </div>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition text-center">
+                    <div class="text-4xl text-brand-red mb-4">✨</div>
+                    <h3 class="text-xl font-bold mb-2">Car Face lifting</h3>
+                    <p class="text-gray-600">Give your car a fresh new appearance with our facelift packages.</p>
+                </div>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition text-center">
+                    <div class="text-4xl text-brand-red mb-4">🔧</div>
+                    <h3 class="text-xl font-bold mb-2">Body Kits Repair</h3>
+                    <p class="text-gray-600">Expert repair services for damaged body kits and bumpers.</p>
+                </div>
+                <div class="p-6 border rounded-lg hover:shadow-lg transition text-center">
+                    <div class="text-4xl text-brand-red mb-4">🎨</div>
+                    <h3 class="text-xl font-bold mb-2">Custom Modifications</h3>
+                    <p class="text-gray-600">Tailored modifications to suit your specific style and performance needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Category -->
+    <section id="categories" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Shop by Category</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Engine Parts -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-bold text-xl mb-4 text-brand-red border-b pb-2">Engine Parts</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Pistons')"
+                                class="hover:text-brand-red transition block">Pistons</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Cylinder heads')"
+                                class="hover:text-brand-red transition block">Cylinder heads</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Crankshafts')"
+                                class="hover:text-brand-red transition block">Crankshafts</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Camshafts')"
+                                class="hover:text-brand-red transition block">Camshafts</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Timing belts')"
+                                class="hover:text-brand-red transition block">Timing belts</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Valves')"
+                                class="hover:text-brand-red transition block">Valves</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Gaskets')"
+                                class="hover:text-brand-red transition block">Gaskets</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Oil pumps')"
+                                class="hover:text-brand-red transition block">Oil pumps</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Water pumps')"
+                                class="hover:text-brand-red transition block">Water pumps</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Engine mounts')"
+                                class="hover:text-brand-red transition block">Engine mounts</a></li>
+                    </ul>
+                </div>
+                <!-- Transmission Parts -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-bold text-xl mb-4 text-brand-red border-b pb-2">Transmission</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Clutch kits')"
+                                class="hover:text-brand-red transition block">Clutch kits</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Flywheels')"
+                                class="hover:text-brand-red transition block">Flywheels</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Transmission filters')"
+                                class="hover:text-brand-red transition block">Transmission filters</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Transmission mounts')"
+                                class="hover:text-brand-red transition block">Transmission mounts</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Shift solenoids')"
+                                class="hover:text-brand-red transition block">Shift solenoids</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Transmission control modules')"
+                                class="hover:text-brand-red transition block">Transmission control modules</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Torque converters')"
+                                class="hover:text-brand-red transition block">Torque converters</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Transmission fluid coolers')"
+                                class="hover:text-brand-red transition block">Transmission fluid coolers</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Transmission pans')"
+                                class="hover:text-brand-red transition block">Transmission pans</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Transmission seals')"
+                                class="hover:text-brand-red transition block">Transmission seals</a></li>
+                    </ul>
+                </div>
+                <!-- Electrical Parts -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-bold text-xl mb-4 text-brand-red border-b pb-2">Electrical</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Alternators')"
+                                class="hover:text-brand-red transition block">Alternators</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Starters')"
+                                class="hover:text-brand-red transition block">Starters</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Ignition coils')"
+                                class="hover:text-brand-red transition block">Ignition coils</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Spark plugs')"
+                                class="hover:text-brand-red transition block">Spark plugs</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Batteries')"
+                                class="hover:text-brand-red transition block">Batteries</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Wiring harnesses')"
+                                class="hover:text-brand-red transition block">Wiring harnesses</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Sensors')"
+                                class="hover:text-brand-red transition block">Sensors</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Switches')"
+                                class="hover:text-brand-red transition block">Switches</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Relays')"
+                                class="hover:text-brand-red transition block">Relays</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuses')"
+                                class="hover:text-brand-red transition block">Fuses</a></li>
+                    </ul>
+                </div>
+                <!-- Cooling System Parts -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-bold text-xl mb-4 text-brand-red border-b pb-2">Cooling System</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Radiators')"
+                                class="hover:text-brand-red transition block">Radiators</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Thermostats')"
+                                class="hover:text-brand-red transition block">Thermostats</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Water pumps')"
+                                class="hover:text-brand-red transition block">Water pumps</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Radiator hoses')"
+                                class="hover:text-brand-red transition block">Radiator hoses</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Heater cores')"
+                                class="hover:text-brand-red transition block">Heater cores</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Cooling fans')"
+                                class="hover:text-brand-red transition block">Cooling fans</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Expansion tanks')"
+                                class="hover:text-brand-red transition block">Expansion tanks</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fan belts')"
+                                class="hover:text-brand-red transition block">Fan belts</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Coolant reservoirs')"
+                                class="hover:text-brand-red transition block">Coolant reservoirs</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Temperature sensors')"
+                                class="hover:text-brand-red transition block">Temperature sensors</a></li>
+                    </ul>
+                </div>
+                <!-- Suspension Parts -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-bold text-xl mb-4 text-brand-red border-b pb-2">Suspension</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Shock absorbers')"
+                                class="hover:text-brand-red transition block">Shock absorbers</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Struts')"
+                                class="hover:text-brand-red transition block">Struts</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Control arms')"
+                                class="hover:text-brand-red transition block">Control arms</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Ball joints')"
+                                class="hover:text-brand-red transition block">Ball joints</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Tie rod ends')"
+                                class="hover:text-brand-red transition block">Tie rod ends</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Stabilizer bars')"
+                                class="hover:text-brand-red transition block">Stabilizer bars</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Bushings')"
+                                class="hover:text-brand-red transition block">Bushings</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Springs')"
+                                class="hover:text-brand-red transition block">Springs</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Wheel bearings')"
+                                class="hover:text-brand-red transition block">Wheel bearings</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Steering racks')"
+                                class="hover:text-brand-red transition block">Steering racks</a></li>
+                    </ul>
+                </div>
+                <!-- Exhaust System Parts -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-bold text-xl mb-4 text-brand-red border-b pb-2">Exhaust System</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Mufflers')"
+                                class="hover:text-brand-red transition block">Mufflers</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Catalytic converters')"
+                                class="hover:text-brand-red transition block">Catalytic converters</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Exhaust pipes')"
+                                class="hover:text-brand-red transition block">Exhaust pipes</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Exhaust manifolds')"
+                                class="hover:text-brand-red transition block">Exhaust manifolds</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Oxygen sensors')"
+                                class="hover:text-brand-red transition block">Oxygen sensors</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Exhaust gaskets')"
+                                class="hover:text-brand-red transition block">Exhaust gaskets</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Exhaust hangers')"
+                                class="hover:text-brand-red transition block">Exhaust hangers</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Exhaust tips')"
+                                class="hover:text-brand-red transition block">Exhaust tips</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('EGR valves')"
+                                class="hover:text-brand-red transition block">EGR valves</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Resonators')"
+                                class="hover:text-brand-red transition block">Resonators</a></li>
+                    </ul>
+                </div>
+                <!-- Brake Parts -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-bold text-xl mb-4 text-brand-red border-b pb-2">Brakes</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake pads')"
+                                class="hover:text-brand-red transition block">Brake pads</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake discs')"
+                                class="hover:text-brand-red transition block">Brake discs</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake calipers')"
+                                class="hover:text-brand-red transition block">Brake calipers</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake master cylinders')"
+                                class="hover:text-brand-red transition block">Brake master cylinders</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake boosters')"
+                                class="hover:text-brand-red transition block">Brake boosters</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake lines')"
+                                class="hover:text-brand-red transition block">Brake lines</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake drums')"
+                                class="hover:text-brand-red transition block">Brake drums</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake shoes')"
+                                class="hover:text-brand-red transition block">Brake shoes</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Brake rotors')"
+                                class="hover:text-brand-red transition block">Brake rotors</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('ABS sensors')"
+                                class="hover:text-brand-red transition block">ABS sensors</a></li>
+                    </ul>
+                </div>
+                <!-- Fuel System Parts -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-md transition">
+                    <h3 class="font-bold text-xl mb-4 text-brand-red border-b pb-2">Fuel System</h3>
+                    <ul class="text-sm text-gray-600 space-y-1">
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel pumps')"
+                                class="hover:text-brand-red transition block">Fuel pumps</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel injectors')"
+                                class="hover:text-brand-red transition block">Fuel injectors</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel filters')"
+                                class="hover:text-brand-red transition block">Fuel filters</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel tanks')"
+                                class="hover:text-brand-red transition block">Fuel tanks</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel pressure regulators')"
+                                class="hover:text-brand-red transition block">Fuel pressure regulators</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Throttle bodies')"
+                                class="hover:text-brand-red transition block">Throttle bodies</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel rails')"
+                                class="hover:text-brand-red transition block">Fuel rails</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel caps')"
+                                class="hover:text-brand-red transition block">Fuel caps</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel level sensors')"
+                                class="hover:text-brand-red transition block">Fuel level sensors</a></li>
+                        <li><a href="#quote-form" onclick="linkToQuoteForm('Fuel lines')"
+                                class="hover:text-brand-red transition block">Fuel lines</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Best Sellers</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Ignition</h3>
+                    <button onclick="enquireProduct('Hyundai Ignition')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Getz Starter</h3>
+                    <button onclick="enquireProduct('Hyundai Getz Starter')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Kia Picanto Service Kit</h3>
+                    <button onclick="enquireProduct('Kia Picanto Service Kit')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Kia K2700 Alternator</h3>
+                    <button onclick="enquireProduct('Kia K2700 Alternator')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Kia Rio Clutch Kit</h3>
+                    <button onclick="enquireProduct('Kia Rio Clutch Kit')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Clutch Cable</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Clutch Cable')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Clutch Kit</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Clutch Kit')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Clock Spring</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Clock Spring')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Thermostat Housing</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Thermostat Housing')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Brake Pads</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Brake Pads')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Coil Pack</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Coil Pack')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Starter</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Starter')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Alternator</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Alternator')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Water Pump</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Water Pump')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Radiator</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Radiator')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Diesel Pump</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Diesel Pump')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Cap</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Cap')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Boot Shocks</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Boot Shocks')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Shocks</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Shocks')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Ignition Lock Set</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Ignition Lock Set')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Window Mechanism</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Window Mechanism')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Door Handle</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Door Handle')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Valve</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Valve')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Fuel Pump</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Fuel Pump')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Timing Belt</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Timing Belt')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Spark Plugs</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Spark Plugs')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Rocker Shaft</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Rocker Shaft')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Hyundai Accent Wheel Bearing</h3>
+                    <button onclick="enquireProduct('Hyundai Accent Wheel Bearing')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+                <div class="bg-white border p-4 rounded hover:shadow-lg transition text-center">
+                    <h3 class="font-bold mb-2 text-sm md:text-base">Towing Bar</h3>
+                    <button onclick="enquireProduct('Towing Bar')"
+                        class="bg-brand-red text-white px-4 py-2 rounded text-sm hover:bg-red-700 transition w-full">Enquire</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section id="brands" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12">Shop by Car Make</h2>
+            <div class="flex flex-wrap justify-center gap-8">
+                <a href="brands/hyundai.html"
+                    class="px-8 py-4 bg-white rounded shadow hover:shadow-lg transition text-xl font-bold text-gray-700 hover:text-brand-red">Hyundai</a>
+                <a href="brands/kia.html"
+                    class="px-8 py-4 bg-white rounded shadow hover:shadow-lg transition text-xl font-bold text-gray-700 hover:text-brand-red">KIA</a>
+                <a href="brands/daewoo.html"
+                    class="px-8 py-4 bg-white rounded shadow hover:shadow-lg transition text-xl font-bold text-gray-700 hover:text-brand-red">Daewoo</a>
+                <a href="brands/ssangyong.html"
+                    class="px-8 py-4 bg-white rounded shadow hover:shadow-lg transition text-xl font-bold text-gray-700 hover:text-brand-red">SsangYong</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop by Car Model Section -->
+    <section id="models" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Shop by Car Model</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Accent Parts')">
+                    <h3 class="font-bold">Hyundai Accent</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Elantra Parts')">
+                    <h3 class="font-bold">Hyundai Elantra</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai H100 Parts')">
+                    <h3 class="font-bold">Hyundai H100</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Palisade Parts')">
+                    <h3 class="font-bold">Hyundai Palisade</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Tucson Parts')">
+                    <h3 class="font-bold">Hyundai Tucson</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai HD65 Parts')">
+                    <h3 class="font-bold">Hyundai HD65</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai i10 Parts')">
+                    <h3 class="font-bold">Hyundai i10</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Sorento Parts')">
+                    <h3 class="font-bold">KIA Sorento</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Carnival Parts')">
+                    <h3 class="font-bold">KIA Carnival</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Atos Parts')">
+                    <h3 class="font-bold">Hyundai Atos</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Grand Creta Parts')">
+                    <h3 class="font-bold">Hyundai Grand Creta</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai i20 Parts')">
+                    <h3 class="font-bold">Hyundai i20</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Santa Fe Parts')">
+                    <h3 class="font-bold">Hyundai Santa Fe</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Venue Parts')">
+                    <h3 class="font-bold">Hyundai Venue</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Getz Parts')">
+                    <h3 class="font-bold">Hyundai Getz</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai HD72 Parts')">
+                    <h3 class="font-bold">Hyundai HD72</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai i30 Parts')">
+                    <h3 class="font-bold">Hyundai i30</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Soul Parts')">
+                    <h3 class="font-bold">KIA Soul</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Seltos Parts')">
+                    <h3 class="font-bold">KIA Seltos</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Creta Parts')">
+                    <h3 class="font-bold">Hyundai Creta</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Grand i10 Parts')">
+                    <h3 class="font-bold">Hyundai Grand i10</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Kona Parts')">
+                    <h3 class="font-bold">Hyundai Kona</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Hyundai Staria Parts')">
+                    <h3 class="font-bold">Hyundai Staria</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Sedona Parts')">
+                    <h3 class="font-bold">KIA Sedona</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('Daewoo Parts')">
+                    <h3 class="font-bold">Daewoo</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Cerato Parts')">
+                    <h3 class="font-bold">KIA Cerato</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Cerato Koup Parts')">
+                    <h3 class="font-bold">KIA Cerato Koup</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA K2700 Parts')">
+                    <h3 class="font-bold">KIA K2700</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA K2500 Parts')">
+                    <h3 class="font-bold">KIA K2500</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Optima Parts')">
+                    <h3 class="font-bold">KIA Optima</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Picanto Parts')">
+                    <h3 class="font-bold">KIA Picanto</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Rio Parts')">
+                    <h3 class="font-bold">KIA Rio</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Rio Hatch Parts')">
+                    <h3 class="font-bold">KIA Rio Hatch</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('KIA Sportage Parts')">
+                    <h3 class="font-bold">KIA Sportage</h3>
+                </div>
+                <div class="border p-4 rounded hover:shadow-lg transition text-center cursor-pointer"
+                    onclick="enquireProduct('SsangYong Parts')">
+                    <h3 class="font-bold">SsangYong</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-brand-blue text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">SHOP DISCOUNT KOREAN CAR PARTS</h2>
+            <p class="text-lg max-w-4xl mx-auto mb-8 leading-relaxed">
+                You can also shop for car parts based on the make and model of your vehicle. We offer parts for
+                a wide
+                variety of makes and models, including current vehicles and discontinued classics. It can be
+                difficult
+                to track down new parts for discontinued models at your local automotive parts store, but at
+                Korean
+                Motor Spares, we have options available! Search your make and model and browse through the
+                selection of
+                parts and accessories we have available for your vehicle. This can include both aftermarket and
+                OEM
+                replacement parts.
+            </p>
+            <a href="#quote-form"
+                class="inline-block bg-brand-red hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg transition">
+                GET A QUOTE NOW
+            </a>
+        </div>
+    </section>
+
+    <!-- Locations Section -->
+    <section id="locations" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">We Deliver Across Gauteng</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <a href="locations/pretoria.html" class="text-gray-600 hover:text-brand-red underline">Pretoria</a>
+                <a href="locations/johannesburg.html"
+                    class="text-gray-600 hover:text-brand-red underline">Johannesburg</a>
+                <a href="locations/edenvale.html" class="text-gray-600 hover:text-brand-red underline">Edenvale</a>
+                <a href="locations/kempton-park.html" class="text-gray-600 hover:text-brand-red underline">Kempton
+                    Park</a>
+                <a href="locations/alberton.html" class="text-gray-600 hover:text-brand-red underline">Alberton</a>
+                <a href="locations/benoni.html" class="text-gray-600 hover:text-brand-red underline">Benoni</a>
+                <a href="locations/boksburg.html" class="text-gray-600 hover:text-brand-red underline">Boksburg</a>
+                <a href="locations/sandton.html" class="text-gray-600 hover:text-brand-red underline">Sandton</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-brand-dark text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Korean Motor Spares</h3>
+                <p class="text-gray-400 mb-4">Specialists in Hyundai, KIA, Daewoo, and SsangYong parts. Best
+                    prices and
+                    quality service guaranteed.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="text-gray-400 mb-2"><i class="fas fa-phone mr-2"></i> 011 970 1857</p>
+                <p class="text-gray-400 mb-2"><i class="fab fa-whatsapp mr-2"></i> 082 505 9074</p>
+                <p class="text-gray-400">Kempton Park, Gauteng</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="text-gray-400 space-y-2">
+                    <li><a href="#home" class="hover:text-white">Home</a></li>
+                    <li><a href="#brands" class="hover:text-white">Brands</a></li>
+                    <li><a href="#quote-form" class="hover:text-white">Get a Quote</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-12 border-t border-gray-800 pt-8 text-gray-500 text-sm">
+            &copy; <span id="year"></span> Korean Motor Spares South Africa. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
